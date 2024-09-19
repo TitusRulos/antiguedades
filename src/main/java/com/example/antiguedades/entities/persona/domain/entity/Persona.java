@@ -30,6 +30,9 @@ public class Persona {
     @Column(name = "nombre")
     private String nombre;
 
+    @Column(columnDefinition = "VARCHAR(255)")
+    private String contraseña;
+
     @ManyToOne
     @JoinColumn(name = "genero_id")
     private Genero genero;
